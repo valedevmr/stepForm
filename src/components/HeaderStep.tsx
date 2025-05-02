@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-import React from "react";
 import Step from "./Step";
 import { HeaderProps } from "../types/ComponentsProps";
 

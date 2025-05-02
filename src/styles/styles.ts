@@ -27,6 +27,8 @@ export const checkStyle = {
 };
 
 export const iconsStyleSkill = {
+  alignItems: "center",
+  justifyContent: "center",
   display: "flex",
   padding: "5px 5px",
   backgroundColor: "#ef6900",

@@ -1,5 +1,4 @@
 import { Button, Grid } from "@mui/material";
-import React from "react";
 import { controllerStep } from "../types/ComponentsProps";
 
 const ControllerStep = ({ indexActive,onNext,onBack,onSubmit }: controllerStep) => {

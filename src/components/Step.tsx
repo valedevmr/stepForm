@@ -1,6 +1,8 @@
-import React from "react";
-import { HeaderProps, StepProps } from "../types/ComponentsProps";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { StepProps } from "../types/ComponentsProps";
 const Step = ({ props, indexActive }: StepProps) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <aside
       style={{
@@ -10,8 +12,13 @@ const Step = ({ props, indexActive }: StepProps) => {
       }}
     >
       {props.lineNext && (
-        <article
-          style={{ width: "7rem", height: "4px", padding: "0 5px 0 5px" }}
+        <Box
+          component="article"
+          style={{
+            width: isMobile ? "1.2rem" : "7rem",
+            height: isMobile ? "4px" : "5px",
+            padding: "0 5px 0 5px",
+          }}
         >
           <span
             style={{
@@ -22,7 +29,7 @@ const Step = ({ props, indexActive }: StepProps) => {
               transition: "background .8s ease", // Transición de 2 segundos
             }}
           ></span>
-        </article>
+        </Box>
       )}
       <article
         style={{

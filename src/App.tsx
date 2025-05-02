@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Grid } from "@mui/material";
 import FormComponent from "./components/FormComponent";
@@ -34,7 +32,7 @@ function App() {
 
   return (
     <Grid sx={{ ...gridf }}>
-      <Grid size={{ sm: 5, md: 5, xs: 5 }} sx={{ ...containerCard }}>
+      <Grid size={{ sm: 5, md: 5, xs: 5 }} sx={{ ...containerCard}}>
         <HeaderStep active={active} />
         <FormComponent
           active={active}
