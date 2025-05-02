@@ -1,0 +1,20 @@
+#root {
+  
+  margin: 0 ;
+  padding: 0;
+
+}
+body{
+  background-color: rgb(245, 245, 245);
+}
+
+
+.mi-span {
+  background-color: #0284c7;  /* Equivalente a bg-sky-600 */
+  height: 30px;
+  width: 30px;
+  display: flex;              /* Para centrar el texto */
+  align-items: center;       /* Centrado vertical */
+  justify-content: center;   /* Centrado horizontal */
+  color: white;              /* Texto blanco */
+}
