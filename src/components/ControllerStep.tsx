@@ -1,9 +1,9 @@
 import { Button, Grid } from "@mui/material";
 import { controllerStep } from "../types/ComponentsProps";
 
-const ControllerStep = ({ indexActive,onNext,onBack,onSubmit }: controllerStep) => {
+const ControllerStep = ({ indexActive,onNext,onBack,onSubmit,succesFinal }: controllerStep) => {
   return (
-    <Grid container sx={{ width: "100%", marginTop: "3.5rem" }}>
+    <Grid container sx={{ width: "100%", marginTop: "3.5rem" ,display:!succesFinal?"auto":"none"}}>
       <Grid
         size={{ md: 6, sm: 6, xs: 6 }}
         sx={{
@@ -12,7 +12,7 @@ const ControllerStep = ({ indexActive,onNext,onBack,onSubmit }: controllerStep) 
           alignItems: "center",
         }}
       >
-        {indexActive !== 1 && (
+        {indexActive !== 1  && (
           <Button
             variant="outlined"
             sx={{ borderColor: "#ef6900", color: "#ef6900",minWidth:"8rem" }}

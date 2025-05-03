@@ -1,12 +1,12 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { StepProps } from "../types/ComponentsProps";
-const Step = ({ props, indexActive }: StepProps) => {
+const Step = ({ props, indexActive,succesFinal }: StepProps) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <aside
       style={{
-        display: "flex",
+        display: succesFinal?"none":"flex",
         justifyContent: "center",
         alignItems: "center",
       }}

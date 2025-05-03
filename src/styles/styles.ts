@@ -21,7 +21,7 @@ export const checkStyle = {
   height: "3.9rem",
   borderRadius: "6px",
   display: "flex",
-  // justifyContent: "space-around",
+  justifyContent: "ce",
   alignItems: "center",
   padding: "0 10px 0 10px",
 };
